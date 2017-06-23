@@ -49,9 +49,6 @@ describe Ruboty::Generator do
     let(:tmp) { 'tmp_generate' }
     let(:template) do
       template = <<-EOS
-user_name "tbpgr"
-
-gem_class_name "Hoge"
 gem_name "hoge"
 
 description "A Ruboty Handler + Actions to output hige."

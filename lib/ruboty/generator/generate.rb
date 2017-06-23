@@ -12,10 +12,7 @@ module Ruboty
     RUBOTY_BASE_FILE = 'lib/ruboty'
     RUBOTY_GENERATOR_FILE_TEMPLATE = <<-EOS
 user_name "user name"
-
-gem_class_name "Gem class name"
 gem_name "gem name"
-
 description "A Ruboty Handler description"
 
 env do |e|

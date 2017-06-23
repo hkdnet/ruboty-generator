@@ -8,7 +8,7 @@ module Ruboty
   class Dsl
     attr_accessor :ruboty_generator
 
-    [:user_name, :gem_class_name, :gem_name, :description].each do |f|
+    [:gem_class_name, :gem_name, :description].each do |f|
       define_method f do |value|
         @ruboty_generator.send("#{f}=", value)
       end
@@ -28,7 +28,6 @@ module Ruboty
 
     def initialize
       @ruboty_generator = Ruboty::DslModel.new
-      @ruboty_generator.user_name = 'your github username'
       @ruboty_generator.gem_class_name = 'your_gem_class_name'
       @ruboty_generator.gem_name = 'your_gem_name'
       @ruboty_generator.description = 'description'
@@ -38,7 +37,6 @@ module Ruboty
 
     def to_s
       <<-EOS
-user_name = #{@ruboty_generator.user_name}
 gem_class_name = #{@ruboty_generator.gem_class_name}
 gem_name = #{@ruboty_generator.gem_name}
 description = #{@ruboty_generator.description}

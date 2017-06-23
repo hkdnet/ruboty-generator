@@ -11,7 +11,6 @@ module Ruboty
     RUBOTY_HANDLER_FILE = 'lib/ruboty/handlers'
     RUBOTY_BASE_FILE = 'lib/ruboty'
     RUBOTY_GENERATOR_FILE_TEMPLATE = <<-EOS
-user_name "user name"
 gem_name "gem name"
 description "A Ruboty Handler description"
 

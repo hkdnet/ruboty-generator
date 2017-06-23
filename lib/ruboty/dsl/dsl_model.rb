@@ -3,9 +3,6 @@
 module Ruboty
   # DslModel
   class DslModel
-    # user_name
-    attr_accessor :user_name
-
     # description
     attr_accessor :description
 

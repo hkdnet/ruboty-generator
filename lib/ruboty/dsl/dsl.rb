@@ -28,9 +28,6 @@ module Ruboty
 
     def initialize
       @ruboty_generator = Ruboty::DslModel.new
-      @ruboty_generator.gem_class_name = 'your_gem_class_name'
-      @ruboty_generator.gem_name = 'your_gem_name'
-      @ruboty_generator.description = 'description'
       @ruboty_generator.env = []
       @ruboty_generator.commands = []
     end
